@@ -20,6 +20,13 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+    font-size: 1.75em;
+}
+
 h3 {
     color: whitesmoke;
     font-family: 'Times New Roman', Times, serif;
