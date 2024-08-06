@@ -6,7 +6,9 @@ var Questionbank = ["Which planet is known as the Red Planet?","Who wrote 'Romeo
     "Which instrument is used to mesure temperature?","What is the capital of France?","What is the largest planet in our solar system?","Who painted the Mona Lisa?",
     "What is the hardest natural substance on Earth?","Which country is known as the Land of the Rising Sun?","What is the smallest country in the world by land area?",
     "What is the main ingredient in traditional Japanese miso soup?","Which is the longest river in the world?","In which year did the Titanic sink?","What does the acronym 'WWW' stand for?",
-    "Who is known as the Father of Computers?"
+    "Who is known as the Father of Computers?","What is the capital of Canada?","Which element has the chemical symbol H?","How many states are there in the United States?","Which planet is closest to the sun?",
+    "What is the tallest mountain in the world?","What is the largest bone in the human body?","Who was the 16th president of the United States?","What is the main language spoken in Brazil?","Which gas is most abundant in the Earth’s atmosphere?",
+    "What is the smallest prime number?"
 ]
 
 QUESTIONSHEET = {
@@ -29,7 +31,17 @@ QUESTIONSHEET = {
     "Which is the longest river in the world?":["Amazon River","Nile River","Yangtze River","Mississippi River"],
     "In which year did the Titanic sink?":[1905,1912,1923,1930],
     "What does the acronym 'WWW' stand for?":["World Wide Web","World Wide Wind","Wide World Web","Web World Wide"],
-    "Who is known as the Father of Computers?":["Alan Turing","Charles Babbage","Thomas Edison","Bill Gates"]
+    "Who is known as the Father of Computers?":["Alan Turing","Charles Babbage","Thomas Edison","Bill Gates"],
+    "What is the capital of Canada?":["Toronto","Vancouver","Ottawa","Montreal"],
+    "Which element has the chemical symbol H?":["Helium","Hydrogen","Hafnium","Holmium"],
+    "How many states are there in the United States?":[48,49,50,51],
+    "Which planet is closest to the sun?":["Venus","Earth","Mercury","Mars"],
+    "What is the tallest mountain in the world?":["K2","Kangchenjunga","Lhotse","Mount Everest"],
+    "What is the largest bone in the human body?":["Femur","Tibia","Humerus","Spine"],
+    "Who was the 16th president of the United States?":["George Washington","Thomas Jefferson","Abraham Lincoln","Andrew Jackson"],
+    "What is the main language spoken in Brazil?":["Spanish","Portuguese","French","English"],
+    "Which gas is most abundant in the Earth’s atmosphere?":["Oxygen","Carbon Dioxide","Nitrogen","Hydrogen"],
+    "What is the smallest prime number?":[0,1,2,3]
 }
 
 ANSWERSHEET = {
@@ -52,7 +64,17 @@ ANSWERSHEET = {
     "Which is the longest river in the world?":"Nile River",
     "In which year did the Titanic sink?":1912,
     "What does the acronym 'WWW' stand for?":"World Wide Web",
-    "Who is known as the Father of Computers?":"Charles Babbage"
+    "Who is known as the Father of Computers?":"Charles Babbage",
+    "What is the capital of Canada?":"Ottawa",
+    "Which element has the chemical symbol H?": "Hydrogen",
+    "How many states are there in the United States?":50,
+    "Which planet is closest to the sun?":"Mercury",
+    "What is the tallest mountain in the world?":"Mount Everest",
+    "What is the largest bone in the human body?":"Femur",
+    "Who was the 16th president of the United States?":"Abraham Lincoln",
+    "What is the main language spoken in Brazil?":"Portuguese",
+    "Which gas is most abundant in the Earth’s atmosphere?":"Nitrogen",
+    "What is the smallest prime number?":2
 }
 
 
@@ -71,7 +93,9 @@ NextQuestion()
 document.getElementById("Choice#1").onclick = function() {
     if (document.getElementById("Choice#1").textContent == ANSWERSHEET[document.getElementById("Title").textContent]){
         Score++
-        console.log(Score)
+        alert("Right Answer")
+    } else{
+        alert(`Wrong, the answer was ${ANSWERSHEET[document.getElementById("Title").textContent]}`)
     }
     if (Number(document.getElementById("Page").textContent) < 10){
         Pagenumber++
@@ -88,7 +112,9 @@ document.getElementById("Choice#1").onclick = function() {
 document.getElementById("Choice#2").onclick = function() {
     if (document.getElementById("Choice#2").textContent == ANSWERSHEET[document.getElementById("Title").textContent]){
         Score++
-        console.log(Score)
+        alert("Right Answer")
+    } else {
+        alert(`Wrong, the answer was ${ANSWERSHEET[document.getElementById("Title").textContent]}`)
     }
     if (Number(document.getElementById("Page").textContent) < 10){
         Pagenumber++
@@ -105,7 +131,9 @@ document.getElementById("Choice#2").onclick = function() {
 document.getElementById("Choice#3").onclick = function() {
     if (document.getElementById("Choice#3").textContent == ANSWERSHEET[document.getElementById("Title").textContent]){
         Score++
-        console.log(Score)
+        alert("Right Answer")
+    } else {
+        alert(`Wrong, the answer was ${ANSWERSHEET[document.getElementById("Title").textContent]}`)
     }
     if (Number(document.getElementById("Page").textContent) < 10){
         Pagenumber++
@@ -122,7 +150,9 @@ document.getElementById("Choice#3").onclick = function() {
 document.getElementById("Choice#4").onclick = function() {
     if (document.getElementById("Choice#4").textContent == ANSWERSHEET[document.getElementById("Title").textContent]){
         Score++
-        console.log(Score)
+        alert("Right Answer")
+    } else {
+        alert(`Wrong, the answer was ${ANSWERSHEET[document.getElementById("Title").textContent]}`)
     }
     if (Number(document.getElementById("Page").textContent) < 10){
         Pagenumber++
